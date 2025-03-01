@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramadan Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with Language Selector -->
+  <header>
+    <div class="header-container">
+      <h1>Ramadan Kareem</h1>
+      <div class="language-selector">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('fr')">Français</button>
+        <button onclick="setLanguage('ar')">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Random Wise Quote Section -->
+  <section id="quote-section">
+    <p id="quote"></p>
+  </section>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#prayer-times" data-key="prayerTimes">Prayer Times</a></li>
+      <li><a href="#eating-times" data-key="eatingTimes">Eating Times</a></li>
+      <li><a href="#suhur" data-key="suhur">Suhur</a></li>
+      <li><a href="#food-rec" data-key="foodRecommendation">Food Recommendation</a></li>
+      <li><a href="#quran" data-key="quran">Quran</a></li>
+      <li><a href="#tips" data-key="tips">Tips</a></li>
+    </ul>
+  </nav>
+
+  <!-- Prayer Times Section -->
+  <section id="prayer-times" class="content-section">
+    <h2 data-key="prayerTimes">Prayer Times</h2>
+    <p data-key="prayerTimesContent">
+      Below are the prayer times for today. Adjust as necessary for your location: Fajr: 4:30 AM, Dhuhr: 12:30 PM, Asr: 4:00 PM, Maghrib: 6:30 PM, Isha: 8:00 PM.
+    </p>
+    <table class="prayer-table">
+      <thead>
+        <tr>
+          <th>Prayer</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fajr</td>
+          <td>4:30 AM</td>
+        </tr>
+        <tr>
+          <td>Dhuhr</td>
+          <td>12:30 PM</td>
+        </tr>
+        <tr>
+          <td>Asr</td>
+          <td>4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Maghrib</td>
+          <td>6:30 PM</td>
+        </tr>
+        <tr>
+          <td>Isha</td>
+          <td>8:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Eating Times Section -->
+  <section id="eating-times" class="content-section">
+    <h2 data-key="eatingTimes">Eating Times</h2>
+    <p data-key="eatingTimesContent">
+      Fasting begins at dawn and ends at sunset. Iftar is served at sunset, and Suhur should be taken before dawn.
+    </p>
+  </section>
+
+  <!-- Suhur Section -->
+  <section id="suhur" class="content-section">
+    <h2 data-key="suhur">Suhur</h2>
+    <p data-key="suhurContent">
+      Suhur is the pre-dawn meal that provides energy for the day. It is recommended to have a balanced meal rich in protein and complex carbohydrates.
+    </p>
+  </section>
+
+  <!-- Food Recommendation Section -->
+  <section id="food-rec" class="content-section">
+    <h2 data-key="foodRecommendation">Food Recommendation</h2>
+    <button id="recommend-btn" data-key="recommendButton">Get Food Recommendation</button>
+    <div id="food-suggestion"></div>
+  </section>
+
+  <!-- Quran Section -->
+  <section id="quran" class="content-section">
+    <h2 data-key="quran">Quran</h2>
+    <p data-key="quranContent">
+      Explore the Quran with daily verses, translations, and commentaries. <a href="https://quran.com" target="_blank">Read Online</a>
+    </p>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips" class="content-section">
+    <h2 data-key="tips">Tips</h2>
+    <div data-key="tipsContent">
+      Tips for a Healthy Ramadan:
+      <ul>
+        <li>Stay hydrated</li>
+        <li>Plan balanced meals</li>
+        <li>Maintain regular prayer</li>
+        <li>Engage in spiritual reflection</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ramadan Website. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="translation.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
